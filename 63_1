@@ -1,18 +1,18 @@
-c#include <iostream>
+#include <iostream>
 #include <fstream>
 using namespace std;
 const int SIZE = 1000;
 string tab[SIZE];
 void z1(){
-  cout << "Zadanie 1:" << endl;
+  cout << "Zadanie:" << endl;
   int length;
-  string w1, w2;
+  string x1, x2;
   for (int i = 0; i < SIZE; i++) {
     length = tab[i].length();
     if (length % 2 != 0) continue;
-    w1 = tab[i].substr(0, length / 2);
-    w2 = tab[i].substr(length / 2, length / 2);
-    if (w1 == w2) {
+    x1 = tab[i].substr(0, length / 2);
+    x2 = tab[i].substr(length / 2, length / 2);
+    if (x1 == x2) {
       cout << tab[i] << endl;
     }
   }
